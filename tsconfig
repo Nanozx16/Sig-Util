@@ -1,0 +1,20 @@
+update eslint; types/lint fixes (#307)
+Update eslint and add types (#307)
+
+This adds more type information to the existing code. While it uncovered
+some issues and bugs, this commit keeps behavioral changes at a minimum
+to make this change non-breaking.
+
+The types were not written by the original author and may not perfectly reflect original intent.
+
+- findTypeDependencies: fix input validation; add test
+- parseTypeNxM: fix input handling; add tests
+- encryption: Minor change in error message output
+- devDeps: eslint@7.32.0->8.39.0
+- Add type information and fix or ignore updated linting rules
+- devDeps: eslint plugins and configs
+- devDeps: @metamask/eslint-config*@9->11.1.0
+- devDeps: typescript@4.8.4
+- devDeps: typedoc@0.22.18->0.24.6
+- devDeps: @types/jest@26.0.24->27.5.2
+- exclude tests from files in package.json
